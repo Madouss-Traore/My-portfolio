@@ -1,0 +1,101 @@
+:root
+{
+  --heading-font-weight: 700;
+  --heading-color: var(--bs-dark);
+  --heading-line-height: 1.1;
+}
+.logo {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+#accuei, #contact, #projets, #skills {
+  height: 100vh;
+}
+
+#accueil {
+  min-height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  text-align: left;
+  position: relative;
+}
+
+.presentation {
+  margin-bottom: 12px;
+  font-size: 1.1rem;
+}
+
+.socials {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.5em;
+}
+
+.details  {
+  text-decoration: none;
+  color: black;
+  font-size: 1em;
+}
+
+.display-4 {
+  font-family: var(--heading-font);
+  font-weight: var(--heading-font-weight);
+  line-height: var(--heading-line-height);
+  color: var(--heading-color);
+}
+
+.nav {
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+}
+.nav:active {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: black;
+  text-decoration: underline;
+}
+
+.nav:hover {
+  font-size: 1.3rem;
+  font-weight: bolder;
+}
+
+.nav.active {
+  font-size: 1.35rem;
+  font-weight: bolder;
+  color: black;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  transition: all 0.3s ease;
+}
+
+.socials__a {
+  width: 30px;
+  height: 30px;
+  margin-top: 12px;
+}
+
+.mail{
+    margin-top: 10px;
+    font-size: 1.5rem;
+}
+
+.details{
+    text-decoration: underline;
+}
+
+
+.githublink{
+    color:black;
+    font-size: 0.9rem;
+    text-underline-offset: 2px;
+}
