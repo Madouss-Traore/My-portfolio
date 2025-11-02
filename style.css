@@ -9,9 +9,13 @@
   font-weight: bold;
 }
 
-#accuei, #contact, #projets, #skills {
+#accuei, #contact, #projets {
   height: 100vh;
 }
+
+ #skills{
+  height: 70vh;
+ }
 
 #accueil {
   min-height: 600px;
