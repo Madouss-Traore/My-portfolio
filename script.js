@@ -1,38 +1,53 @@
-// on cible les nav
-const navLinks = document.querySelectorAll(".nav");
-
-navLinks.forEach((link) => {
-  link.addEventListener("click", () => {
-    navLinks.forEach((l) => l.classList.remove("active"));
-    // on ajoute la classe 'active' au click
-    link.classList.add("active");
-  });
-});
-
-
-// on active sur la nav
 document.addEventListener('DOMContentLoaded', () => {
-  const navLinks = document.querySelectorAll('.nav a, .nav-link'); 
+  const body = document.body;
+  const menuBtn = document.querySelector('.menu-btn');
+  const navLinks = document.querySelectorAll('#one-page-menu .nav');
+
+  // ---------- MENU BURGER ----------
+  if (menuBtn) {
+    menuBtn.addEventListener('click', () => {
+      body.classList.toggle('nav-active');
+    });
+  }
+
+
   navLinks.forEach((link) => {
     link.addEventListener('click', () => {
       navLinks.forEach((l) => l.classList.remove('active'));
       link.classList.add('active');
+      body.classList.remove('nav-active');
     });
   });
 
-
-  const swiper = new Swiper('.portfolio-Swiper', {
-    loop: true,
-    slidesPerView: 3,
-    spaceBetween: 30,
-    pagination: { el: '.swiper-pagination', clickable: true },
-    navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
-    breakpoints: {
-      300:  { slidesPerView: 2, spaceBetween: 16 },
-      768:  { slidesPerView: 2, spaceBetween: 20 },
-      1200: { slidesPerView: 3, spaceBetween: 30 },
-    },
-  });
-}); 
-
- 
+  // ---------- SWIPER PORTFOLIO ----------
+  const swiperContainer = document.querySelector('.portfolio-Swiper');
+  if (swiperContainer) {
+    const swiper = new Swiper('.portfolio-Swiper', {
+      loop: true,
+      slidesPerView: 3,
+      spaceBetween: 30,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev'
+      },
+      breakpoints: {
+        0: {           // mobile
+          slidesPerView: 1,
+          spaceBetween: 16
+        },
+        576: {        // tablette
+          slidesPerView: 2,
+          spaceBetween: 20
+        },
+        992: {        // desktop
+          slidesPerView: 3,
+          spaceBetween: 30
+        }
+      }
+    });
+  }
+});

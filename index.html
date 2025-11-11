@@ -2,19 +2,26 @@
 <html lang="fr">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MT Portfolio</title>
+
+    <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+
+    <!-- Swiper -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
 
-
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
+    <!--burger -->
+    <a class="menu-btn"><span></span></a>
 
+    <!-- HEADER  -->
     <header id="header-nav" class="col-lg-2 position-fixed px-5 bg-white h-100">
         <div class="header-wrap d-flex flex-column justify-content-between h-100">
             <div>
@@ -24,7 +31,7 @@
 
                 <nav id="one-page-menu" class="vertical-menu my-5">
                     <ul class="menu-list list-unstyled">
-                        <li><a href="#accueil" class="nav">Accueil</a></li>
+                        <li><a href="#accueil" class="nav active">Accueil</a></li>
                         <li><a href="#experience" class="nav">Expérience</a></li>
                         <li><a href="#skills" class="nav">Skills</a></li>
                         <li><a href="#methodo" class="nav">Méthodologie</a></li>
@@ -33,107 +40,103 @@
                     </ul>
                 </nav>
             </div>
-
         </div>
     </header>
 
+    <!-- MAIN -->
     <main class="col-lg-10 offset-lg-2">
         <div class="container">
-
-            <!-- content wrapper -->
             <div class="justify-content-center px-1 mx-1 px-xl-5 mx-xl-5">
 
+                <!-- ACCUEIL -->
                 <section id="accueil" class="py-5 bg-text" data-text="01">
-
-
                     <div class="banner-content my-1 pt-1 my-lg-5 pt-lg-5">
-                        <span class="text-muted text-uppercase"> Developpeuse / Ergonome</span>
+                        <span class="text-muted text-uppercase">Développeuse / Ergonome</span>
                         <h1 class="banner-title display-xl lh-1 txt-fx slide-up">Madouss TRAORE</h1>
                     </div>
 
                     <section class="presentation">
-
-                        <p>Actuellement en reconversion via la formation Concepteur Développeur d’Applications
-                            chez O’clock, j’allie mon parcours en ergonomie et design UX/UI à mes nouvelles compétences
-                            en
-                            développement web pour créer des applications intuitives, accessibles et porteuses de
-                            sens.<br>
+                        <p>
+                            Actuellement en reconversion via la formation
+                            <strong>Concepteur Développeur d’Applications</strong> chez O’clock,
+                            j’allie mon parcours en ergonomie et design UX/UI à mes nouvelles compétences
+                            en développement web pour créer des applications intuitives, accessibles et porteuses de
+                            sens.
+                        </p>
+                        <p>
                             Curieuse, rigoureuse et animée par le goût du défi, j’aime concevoir des expériences
                             numériques claires,
-                            utiles et centrées sur l’humain.</p>
-
-                        <p>Ancienne joueuse de rugby de haut niveau et aujourd’hui pratiquante de jiu-jitsu brésilien,
-                            je garde le
-                            goût de
-                            l’effort et de la persévérance.<br> En dehors du code, j’aime peindre à l’aquarelle,
-                            tricoter, me
-                            ressourcer dans la nature, ...</p>
-                        <p>je suis ouverte à de nouveaux échanges et projets. N’hésitez pas à me contacter !</p>
+                            utiles et centrées sur l’humain.
+                        </p>
+                        <p>
+                            Ancienne joueuse de rugby de haut niveau et aujourd’hui pratiquante de jiu-jitsu brésilien,
+                            je garde le goût de l’effort et de la persévérance. En dehors du code,
+                            j’aime peindre à l’aquarelle, tricoter, me ressourcer dans la nature...
+                        </p>
+                        <p>
+                            Je suis ouverte à de nouveaux échanges et projets. N’hésitez pas à me contacter !
+                        </p>
                     </section>
 
-
                     <div class="col-lg-3">
-                        <a href="#projets" class="btn btn-dark text-uppercase py-4 px-5">Mon
-                            Travail →</a>
+                        <a href="#projets" class="btn btn-dark text-uppercase py-4 px-5">
+                            Mon Travail →
+                        </a>
                     </div>
 
                     <section class="socials">
-                        <a href="https://www.linkedin.com/in/madouss-traor%C3%A9-6297b0189/"><img class="socials__a"
-                                src="assets/linkedin.png" alt="My linkedin profile"></a>
-                        <a class="git" href="https://github.com/Madouss-Traore"><img class="socials__a"
-                                src="assets/github.png" alt="My Github profile"></a>
+                        <a href="https://www.linkedin.com/in/madouss-traor%C3%A9-6297b0189/" target="_blank">
+                            <img class="socials__a" src="assets/linkedin.png" alt="Profil LinkedIn" />
+                        </a>
+                        <a class="git" href="https://github.com/Madouss-Traore" target="_blank">
+                            <img class="socials__a" src="assets/github.png" alt="Profil GitHub" />
+                        </a>
                     </section>
                 </section>
 
-                <!-- ///////////////////////FORMATION/////////////////////// -->
-
-                <section id="experience" class=" py-5 bg-text" data-text="02">
-
-
+                <!-- EXPERIENCE / FORMATION -->
+                <section id="experience" class="py-5 bg-text" data-text="02">
                     <div class="row d-flex flex-wrap">
                         <div class="col-lg-6 pb-5">
-
                             <h3 class="display-4 txt-fx slide-up">Formation</h3>
 
                             <div class="data-info py-3">
-                                <span class="meta-date"> En cours</span>
+                                <span class="meta-date">En cours</span>
                                 <h4 class="info-title">Concepteur développeur d'applications web</h4>
-                                <p>0'clock</p>
-
+                                <p>O'clock</p>
                             </div>
 
                             <div class="data-info py-3">
-                                <span class="meta-date"> 2024</span>
+                                <span class="meta-date">2024</span>
                                 <h4 class="info-title">Ergonomie des interfaces & UX/UI Design</h4>
                                 <p>Usabilis</p>
-
                             </div>
 
                             <div class="data-info">
-                                <span class="meta-date"> 2019</span>
-                                <h4 class="info-title">Master 2 ISMH — Ingénierie &amp; ergonomie de l'activité physique
-                                    (IEAP)</h4>
-                                <p>Université Paris-Saclay</p>
-                            </div>
-
-                            <div class="data-info">
-                                <span class="meta-date"> 2018</span>
-                                <h4 class="info-title">Master 1 — Ingénierie &amp; Sciences du Mouvement Humain (ISMH)
+                                <span class="meta-date">2019</span>
+                                <h4 class="info-title">
+                                    Master 2 ISMH — Ingénierie & ergonomie de l'activité physique (IEAP)
                                 </h4>
                                 <p>Université Paris-Saclay</p>
                             </div>
 
                             <div class="data-info">
-                                <span class="meta-date"> 2017</span>
-                                <h4 class="info-title">Licence STAPS — spécialité Activités Physiques Adaptées &amp;
-                                    Santé (APA-S)
+                                <span class="meta-date">2018</span>
+                                <h4 class="info-title">
+                                    Master 1 — Ingénierie & Sciences du Mouvement Humain (ISMH)
+                                </h4>
+                                <p>Université Paris-Saclay</p>
+                            </div>
+
+                            <div class="data-info">
+                                <span class="meta-date">2017</span>
+                                <h4 class="info-title">
+                                    Licence STAPS — Activités Physiques Adaptées & Santé (APA-S)
                                 </h4>
                                 <p>Université Paris 13</p>
                             </div>
                         </div>
 
-
-                        <!-- /////////////////////// EXPERIENCE /////////////////////// -->
                         <div class="col-lg-6 pb-5">
                             <h3 class="display-4 txt-fx slide-up">Expériences</h3>
 
@@ -147,311 +150,265 @@
                                 <span class="meta-date">fév. 2020 – juin 2020</span>
                                 <h4 class="info-title">Ergonome — CEREMH (CDD)</h4>
                                 <p>Vélizy-Villacoublay, Île-de-France</p>
-
                             </div>
 
                             <div class="data-info">
                                 <span class="meta-date">fév. 2019 – juin 2019</span>
                                 <h4 class="info-title">Ergonome stagiaire — CEREMH</h4>
                                 <p>Vélizy-Villacoublay, Île-de-France</p>
-
                             </div>
 
                             <div class="data-info">
                                 <span class="meta-date">avr. 2018 – juin 2018</span>
-                                <h4 class="info-title">Ingénieur·e R&amp;D stagiaire en biomécanique — KINVENT
-                                    Biomécanique</h4>
+                                <h4 class="info-title">
+                                    Ingénieur·e R&D stagiaire — KINVENT Biomécanique
+                                </h4>
                                 <p>Orsay, Île-de-France</p>
-                                </p>
-
                             </div>
 
                             <div class="data-info">
                                 <span class="meta-date">avr. 2017</span>
-                                <h4 class="info-title">Enseignante stagiaire en APA — Hôpital de jour de Bobigny</h4>
+                                <h4 class="info-title">
+                                    Enseignante stagiaire en APA — Hôpital de jour de Bobigny
+                                </h4>
                                 <p>Bobigny, Île-de-France</p>
                             </div>
                         </div>
 
-
-                        <div class="cv  my-4">
+                        <div class="cv my-4">
                             <a href="assets/CV Madouss Traoré.pdf" download="Madouss-Traore_CV.pdf"
                                 class="btn btn-dark px-5 py-4 btn-lg">
                                 Télécharger le CV
                             </a>
                         </div>
+                    </div>
+                </section>
 
+                <!-- SKILLS -->
+                <section id="skills" class="py-5 my-5 bg-text" data-text="03">
+                    <div class="container text-center">
+                        <h2 class="display-4 txt-fx slide-up">Compétences techniques</h2>
+                        <p class="lead mb-5">
+                            Compétences acquises dans le cadre de la formation Concepteur Développeur Web (O'Clock –
+                            niveau Bac+4) et consolidées par mes projets personnels et en équipe.
+                        </p>
 
-
-
-
-
-                        <!-- /////////////////////// SKILLS /////////////////////// -->
-
-
-
-
-                        <section id="skills" class="py-5 my-5 bg-text" data-text="04">
-                            <div class="container text-center">
-                                <h2 class="display-4 txt-fx slide-up">Compétences techniques</h2>
-                                <p class="lead mb-5">
-                                    Compétences acquises dans le cadre de la formation <strong>Concepteur Développeur
-                                        Web</strong>
-                                    (O'Clock – niveau Bac+4) et consolidées par mes projets personnels et en équipe.
-                                </p>
-
-                                <div class="row text-start">
-                                    <div class="col-md-4 mb-4">
-                                        <h4 class=" text-center">Front-end</h4>
-                                        <ul>
-                                            <li>HTML5 / CSS3 – intégration responsive, accessibilité (A11y)</li>
-                                            <li>JavaScript (ES6+), manipulation du DOM</li>
-                                            <li>Frameworks : React, React Router</li>
-                                            <li>API Fetch, SPA (Single Page Applications)</li>
-                                            <li>Gestion de l’état, composants modulaires</li>
-                                        </ul>
-                                    </div>
-
-                                    <div class="col-md-4 mb-4">
-                                        <h4 class=" text-center">Back-end</h4>
-                                        <ul>
-                                            <li>Node.js, Express – création d’API REST sécurisées</li>
-                                            <li>Architecture MVC, POO, Active Record</li>
-                                            <li>Bases de données : PostgreSQL, MongoDB</li>
-                                            <li>ORM et ACL, microservices, NestJS</li>
-                                            <li>Authentification JWT, gestion des rôles</li>
-                                        </ul>
-                                    </div>
-
-
-                                    <div class="col-md-4 mb-4">
-                                        <h4 class=" text-center">Outils & Méthodologie</h4>
-                                        <ul>
-                                            <li>Git / GitHub – CI/CD avec GitHub Actions</li>
-                                            <li>Docker & Docker Compose, notions de DevOps</li>
-                                            <li>Tests automatisés & optimisation des performances</li>
-                                            <li>SCRUM, pair programming, revue de code</li>
-                                            <li>Figma, UML, documentation technique</li>
-                                        </ul>
-                                    </div>
-
-
-                                </div>
+                        <div class="row text-start">
+                            <div class="col-md-4 mb-4">
+                                <h4 class="text-center">Front-end</h4>
+                                <ul>
+                                    <li>HTML5 / CSS3 – intégration responsive, accessibilité (A11y)</li>
+                                    <li>JavaScript (ES6+), manipulation du DOM</li>
+                                    <li>Frameworks : React, React Router</li>
+                                    <li>API Fetch, SPA (Single Page Applications)</li>
+                                    <li>Gestion de l’état, composants modulaires</li>
+                                </ul>
                             </div>
-                        </section>
 
-                        <!-- /////////////////////// METHODOLOGIE /////////////////////// -->
-
-                        <section id="methodo" class="my-5 py-5 bg-text" data-text="05">
-                            <div class="container text-center">
-                                <h2 class="display-4 txt-fx slide-up">Mon processus de développement</h2>
-                                <p class="lead mb-5">
-                                    Une approche structurée, inspirée de mon parcours en ergonomie : comprendre les
-                                    besoins, concevoir,
-                                    développer et livrer des applications à la fois fonctionnelles et intuitives.
-                                </p>
-
-                                <div class="row text-start text-center">
-
-                                </div>
+                            <div class="col-md-4 mb-4">
+                                <h4 class="text-center">Back-end</h4>
+                                <ul>
+                                    <li>Node.js, Express – APIs REST</li>
+                                    <li>Architecture MVC, POO</li>
+                                    <li>PostgreSQL, MongoDB</li>
+                                    <li>ORM (Sequelize), ACL, microservices, NestJS</li>
+                                    <li>Authentification JWT, gestion des rôles</li>
+                                </ul>
                             </div>
-                        </section>
-                        <div class="col-md-4 mb-4">
-                            <h4>1. Analyse & conception</h4>
-                            <p>Étude des besoins, conception UX/UI, élaboration de schémas fonctionnels
-                                et de wireframes afin de poser les bases du projet.
-                            </p>
-                        </div>
-                        <div class="col-md-4 mb-4">
-                            <h4>2. Choix techniques & planification</h4>
-                            <p>Sélection du stack adapté (HTML, CSS, JavaScript, React, Node…), planification et gestion
-                                du projet
-                                avec des outils
-                                collaboratifs et Git.
-                            </p>
-                        </div>
-                        <div class="col-md-4 mb-4">
-                            <h4>3. Développement</h4>
-                            <p>Implémentation des fonctionnalités, transformation
-                                des maquettes en interfaces dynamiques et optimisation de l’expérience utilisateur.</p>
-                        </div>
-                        <div class="col-md-4 mb-4">
-                            <h4>4. Tests & débogage</h4>
-                            <p>Réalisation de tests et ajustements à chaque itération pour garantir
-                                la fiabilité, la qualité et
-                                la cohérence de l’expérience utilisateur.</p>
-                        </div>
-                        <div class="col-md-4 mb-4">
-                            <h4>5. Déploiement & maintenance</h4>
-                            <p>Mise en ligne, suivi des retours et
-                                amélioration continue
-                                du
-                                code et de la solution.</p>
+
+                            <div class="col-md-4 mb-4">
+                                <h4 class="text-center">Outils & Méthodologie</h4>
+                                <ul>
+                                    <li>Git / GitHub – CI/CD (GitHub Actions)</li>
+                                    <li>Docker & Docker Compose</li>
+                                    <li>Tests & optimisation des performances</li>
+                                    <li>SCRUM, pair programming, revue de code</li>
+                                    <li>Figma, UML, documentation technique</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
-            </div>
-            </section>
+                </section>
 
-            <!-- /////////////////////PORTFOLIO/////////////////////// -->
+                <!-- MÉTHODOLOGIE -->
+                <section id="methodo" class="my-5 py-5 bg-text" data-text="04">
+                    <div class="container text-center">
+                        <h2 class="display-4 txt-fx slide-up">Mon processus de développement</h2>
+                        <p class="lead mb-5">
+                            Une approche structurée, inspirée de l’ergonomie : comprendre les besoins, concevoir,
+                            développer, tester et améliorer en continu.
+                        </p>
 
-            <section id="projets" class="my-5 py-5 bg-text" data-text="04">
-                <div class="section-header my-5">
-                    <div class="row justify-content-center g-5">
-                        <div class="col-lg-4">
-                            <h2 class="display-4 txt-fx slide-up">Portfolio</h2>
+                        <div class="row text-start ">
+                            <div class="col-md-4 mb-4">
+                                <h4>1. Analyse & conception</h4>
+                                <p>Étude des besoins, conception UX/UI, élaboration de schémas fonctionnels et de
+                                    wireframes afin de poser les bases du projet.</p>
+                            </div>
+
+                            <div class="col-md-4 mb-4">
+                                <h4>2. Choix techniques & planification</h4>
+                                <p>Sélection du stack adapté (HTML, CSS, JavaScript, React, Node…), planification et
+                                    gestion du projet avec des outils collaboratifs et Git.</p>
+                            </div>
+
+                            <div class="col-md-4 mb-4">
+                                <h4>3. Développement</h4>
+                                <p>Implémentation des fonctionnalités, transformation des maquettes en interfaces
+                                    dynamiques et optimisation de l’expérience utilisateur.</p>
+                            </div>
+
+                            <div class="col-md-4 mb-4">
+                                <h4>4. Tests & débogage</h4>
+                                <p>Réalisation de tests et ajustements à chaque itération pour garantir la fiabilité, la
+                                    qualité et la cohérence de l’expérience utilisateur.</p>
+                            </div>
+
+                            <div class="col-md-4 mb-4">
+                                <h4>5. Déploiement & maintenance</h4>
+                                <p>Mise en ligne, suivi des retours et amélioration continue du code et de la solution.
+                                </p>
+                            </div>
+
                         </div>
-
-
-                        <!-- //////////////////////PORTFOLIO///////////////////// -->
-
                     </div>
+                </section>
 
-
+                <!-- PORTFOLIO -->
+                 
+                <section id="projets" class="my-5 py-5 bg-text" data-text="05">
+                    <div class="section-header my-5 text-center">
+                        <div class="row justify-content-center g-5">
+                            <div class="col-lg-4">
+                                <h2 class="display-4 txt-fx slide-up">Portfolio</h2>
+                            </div>
+                        </div>
+                         <p class="lead mb-5">
+                            L’intégralité de mes projets se trouvent sur mon GitHub
+                        </p>
+                    </div>
 
                     <div class="swiper portfolio-Swiper portfolio-content py-4">
-
                         <div class="swiper-wrapper">
-                            <!-- 1er projet -->
+                            <!-- Projet 1 -->
                             <div class="swiper-slide">
                                 <div class="image-holder">
-                                    <a href="https://electroderme.fr/" title="portfolio details">
-                                        <img src="assets/Njohr.png" alt="portfolio" class="img-fluid">
+                                    <a href="https://electroderme.fr/" target="_blank">
+                                        <img src="assets/Njohr.png" alt="Site Electro Derme" class="img-fluid" />
                                     </a>
                                 </div>
-                                <div class="titre caption p-3 border rounded ">
-                                    <div class="d-flex justify-content-between align-items-center mb-2">
-                                        <div class="title fw-bold text-uppercase">site vitrine - Electro
-                                            Derme</div>
+                                <div class="titre caption p-3 border rounded">
+                                    <div class="fw-bold text-uppercase mb-2">
+                                        Site vitrine - Electro Derme
                                     </div>
-
-                                    <!--  description -->
-                                    <p class=" description small text-muted mb-2">
-                                        Electro Derme est un site vitrine présentant des services
-                                        d’électro-épilation et des avis
-                                        clients.
+                                    <p class="description small text-muted mb-2">
+                                        Site vitrine présentant les services d’électro-épilation et les retours clients.
                                     </p>
-
-                                    <!-- Stack technique -->
-                                    <p class="small mb-1"><strong>Stack :</strong> Html, CSS, JavaScript, EJS,
-                                        Swiper.js, Node.js, Express.js
-                                    </p>
-
-                                    <!-- Lien  -->
                                     <p class="small mb-1">
-                                        <strong>Lien :</strong> <a
-                                            href="https://github.com/Madouss-Traore/Electro-derme-website/"
-                                            class="text-decoration-underline githublink">dépôt GitHub</a>
+                                        <strong>Stack :</strong> HTML, CSS, JavaScript, EJS, Node.js, Express.js,
+                                        Swiper.js
                                     </p>
-                                    <div class="site text-center my-3"> <a href="http://electroderme.fr/"
-                                            class="btn btn-dark">Visiter</a></div>
-
-
+                                    <p class="small mb-1">
+                                        <strong>Lien :</strong>
+                                        <a href="https://github.com/Madouss-Traore/Electro-derme-website/"
+                                            target="_blank" class="githublink text-decoration-underline">dépôt
+                                            GitHub</a>
+                                    </p>
+                                    <div class="site text-center my-3">
+                                        <a href="https://electroderme.fr/" target="_blank"
+                                            class="btn btn-dark">Visiter</a>
+                                    </div>
                                 </div>
-
                             </div>
-                            <!-- 2e projet: -->
+
+                            <!-- Projet 2 -->
                             <div class="swiper-slide">
                                 <div class="image-holder d-flex justify-content-center">
-                                    <a href="https://github.com/Madouss-Traore/books-collection-api"
-                                        title="portfolio details">
-                                        <img src="assets/API.png" alt="github repo" class="img-fluid">
+                                    <a href="https://github.com/Madouss-Traore/books-collection-api" target="_blank">
+                                        <img src="assets/API.png" alt="API Books Collection" class="img-fluid" />
                                     </a>
                                 </div>
-                                <div class="titre caption p-3 border rounded ">
-                                    <div class="d-flex justify-content-between align-items-center mb-2">
-                                        <div class="title fw-bold text-uppercase">API - books collection</div>
+                                <div class="titre caption p-3 border rounded">
+                                    <div class="fw-bold text-uppercase mb-2">
+                                        API - Books Collection
                                     </div>
-
-                                    <!--  description -->
-                                    <p class=" description small text-muted mb-2">
-                                        Mon API est une application qui permet de gérer sa bibliothèque personnelle de
-                                        livres.
+                                    <p class="description small text-muted mb-2">
+                                        API permettant de gérer une bibliothèque personnelle de livres.
                                     </p>
-
-                                    <!-- Stack technique -->
-                                    <p class="small mb-1"><strong>Stack :</strong> JavaScript, Node.js, Express.js,
-                                        Sequelize, PostgreSQL
-
-                                        <!-- Lien  -->
                                     <p class="small mb-1">
-                                        <strong>Lien :</strong> <a
-                                            href="https://github.com/Madouss-Traore/books-collection-api"
-                                            class="text-decoration-underline githublink">dépôt GitHub</a>
+                                        <strong>Stack :</strong> JavaScript, Node.js, Express.js, Sequelize, PostgreSQL
                                     </p>
-
-
-
+                                    <p class="small mb-1">
+                                        <strong>Lien :</strong>
+                                        <a href="https://github.com/Madouss-Traore/books-collection-api" target="_blank"
+                                            class="githublink text-decoration-underline">dépôt GitHub</a>
+                                    </p>
                                 </div>
-
                             </div>
-                            <!-- 3e projet: -->
+
+                            <!-- Projet 3 -->
                             <div class="swiper-slide">
                                 <div class="image-holder d-flex justify-content-center">
-                                    <a href="https://madouss-video-player.vercel.app/"
-                                        title="portfolio details">
-                                        <img src="assets/video-player.png" alt="github repo" class="img-fluid">
+                                    <a href="https://madouss-video-player.vercel.app/" target="_blank">
+                                        <img src="assets/video-player.png" alt="Video Player" class="img-fluid" />
                                     </a>
                                 </div>
-                                <div class="titre caption p-3 border rounded ">
-                                    <div class="d-flex justify-content-between align-items-center mb-2">
-                                        <div class="title fw-bold text-uppercase">video player</div>
+                                <div class="titre caption p-3 border rounded">
+                                    <div class="fw-bold text-uppercase mb-2">
+                                        Video Player
                                     </div>
-
-                                    <!--  description -->
-                                    <p class=" description small text-muted mb-2">
-                                        Ce player est un lecteur vidéo inspiré de YouTube.
-  Il permet de lire une vidéo principale et de sélectionner d'autres vidéos via une sidebar interactive.
+                                    <p class="description small text-muted mb-2">
+                                        Lecteur vidéo inspiré de YouTube, avec vidéo principale et sidebar interactive.
                                     </p>
-
-                                    <!-- Stack technique -->
-                                    <p class="small mb-1"> <strong>Stack :</strong> React, TypeScript, CSS </p>
-
-                                        <!-- Lien  -->
                                     <p class="small mb-1">
-                                        <strong>Lien :</strong> <a
-                                            href="https://github.com/Madouss-Traore/Video-player"
-                                            class="text-decoration-underline githublink">dépôt GitHub</a>
+                                        <strong>Stack :</strong> React, TypeScript, CSS
                                     </p>
-
-                                    <div class="site text-center my-3"> <a href="https://madouss-video-player.vercel.app/"
-                                            class="btn btn-dark">Visiter</a></div>
+                                    <p class="small mb-1">
+                                        <strong>Lien :</strong>
+                                        <a href="https://github.com/Madouss-Traore/Video-player" target="_blank"
+                                            class="githublink text-decoration-underline">dépôt GitHub</a>
+                                    </p>
+                                    <div class="site text-center my-3">
+                                        <a href="https://madouss-video-player.vercel.app/" target="_blank"
+                                            class="btn btn-dark">Visiter</a>
+                                    </div>
                                 </div>
-
-                                  
-
-                                <!-- 4) Pagination  -->
-                                <div class="swiper-pagination"></div>
-                                <div class="swiper-button-next"></div>
-                                <div class="swiper-button-prev"></div>
                             </div>
-
-                            
                         </div>
-            </section>
 
-            <!-- /////////////////////// CONTACT /////////////////////// -->
-            <section id="contact" class="my-5 py-5 bg-text" data-text="05">
-                <div class="container">
-                    <div>
+                        <!-- Swiper -->
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </section>
+
+                <!-- CONTACT -->
+                <section id="contact" class="my-5 py-5 bg-text" data-text="06">
+                    <div class="container">
                         <div class="col-lg-6">
                             <h2 class="display-4 txt-fx slide-up">Contactez-moi</h2>
-
                         </div>
                         <div class="row d-flex g-5">
-
                             <div>
-                                <h3 class="mail">Envoyez-moi un e-mail directement à l’adresse suivante : <a
-                                        href="mailto:madouss.traore.dev@gmail.com" class="mail"> <strong
-                                            class="details">madouss.traore.dev@gmail.com</strong></a> </h3>
+                                <h3 class="mail">
+                                    Envoyez-moi un e-mail à l'adresse suivante :
+                                    <a href="mailto:madouss.traore.dev@gmail.com" class="mail">
+                                        <strong class="details">madouss.traore.dev@gmail.com</strong>
+                                    </a>
+                                </h3>
                             </div>
                         </div>
-            </section>
+                    </div>
+                </section>
 
-
+            </div>
+        </div>
     </main>
-    <script src="script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
 
+    <!-- SCRIPTS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
